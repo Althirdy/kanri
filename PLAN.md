@@ -10,7 +10,7 @@ https://claude.ai/artifact/AhKpMMrCBVLbMkrMogv4n8
 
 Done when: a PR with a bad commit message or a fake secret is blocked, and the CI badge is green.
 
-- [ ] Monorepo skeleton (web, api, shared)
+- [x] Monorepo skeleton (web, api, shared)
 - [ ] ESLint, Prettier, EditorConfig
 - [ ] Husky hooks, lint-staged, commitlint
 - [ ] Build, lint, typecheck and tests all pass locally
