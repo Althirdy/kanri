@@ -1,6 +1,7 @@
 {
   "name": "kanri",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@12.16.1",
   "engines": {
     "node": ">=22 <23"
@@ -9,6 +10,17 @@
     "dev": "pnpm --parallel -r dev",
     "build": "pnpm -r build",
     "typecheck": "pnpm -r typecheck",
-    "test": "pnpm -r test"
+    "test": "pnpm -r test",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.14.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.13.0",
+    "prettier": "3.9.10",
+    "typescript-eslint": "8.72.1"
   }
 }

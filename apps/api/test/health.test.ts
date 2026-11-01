@@ -1,10 +1,11 @@
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import request from 'supertest';
+import type { Server } from 'node:http';
 import type { INestApplication } from '@nestjs/common';
 import { createApp } from '../src/create-app.js';
 
 describe('GET /api/health', () => {
-  let app: INestApplication;
+  let app: INestApplication<Server>;
 
   beforeAll(async () => {
     app = await createApp();
